@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>沖繩親子自駕旅程｜1/28 - 2/2</title>
+  <meta name="description" content="沖繩六天五夜靜態旅遊網站：景點圖片、Google Map、附近餐廳推薦、A 到 B 導航。" />
+  <link rel="preconnect" href="https://www.google.com" />
+  <link rel="preconnect" href="https://commons.wikimedia.org" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="hero" id="top">
+    <nav class="nav glass">
+      <a class="brand" href="#top"><span>🌺</span> Okinawa Family Trip</a>
+      <div class="nav-links">
+        <a href="#days">每日行程</a>
+        <a href="#spots">景點地圖</a>
+        <a href="#routes">交通導航</a>
+        <a href="#restaurants">餐廳推薦</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner">
+      <p class="eyebrow reveal">6 Days Okinawa Road Trip</p>
+      <h1 class="reveal">沖繩親子自駕旅程</h1>
+      <p class="hero-sub reveal">1/28 ～ 2/2｜抵達中部沖繩・北部麗海・國際通・兒童王國・南部秘境・波上祈福</p>
+      <div class="hero-actions reveal">
+        <a class="btn primary" href="#days">看每日行程</a>
+        <a class="btn secondary" target="_blank" rel="noreferrer" href="https://www.google.com/maps/dir/?api=1&origin=Naha%20Airport%2C%20Okinawa&destination=American%20Village%2C%20Chatan%2C%20Okinawa&travelmode=driving">開啟第一段導航</a>
+      </div>
+      <div class="route-ribbon reveal" id="route-ribbon"></div>
+    </div>
+
+    <div class="floating-card card-a">✈️ 09:35 抵達</div>
+    <div class="floating-card card-b">🚗 自駕路線</div>
+    <div class="floating-card card-c">🗺️ Google Map</div>
+  </header>
+
+  <main>
+    <section class="section intro-grid">
+      <div class="panel reveal">
+        <span class="section-kicker">TRIP BOARD</span>
+        <h2>把流程圖變成會讓人期待出發的網站</h2>
+        <p>這版把你的沖繩流程整理成「每日行程、景點圖片、嵌入地圖、附近餐廳與一鍵導航」。手機上也可以直接開 Google Map 做即時導航。</p>
+      </div>
+      <figure class="poster reveal">
+        <img src="assets/okinawa-flow.png" alt="原始沖繩旅遊流程圖" />
+      </figure>
+    </section>
+
+    <section class="section" id="days">
+      <div class="section-head reveal">
+        <span class="section-kicker">DAY BY DAY</span>
+        <h2>每日行程</h2>
+        <p>像導遊一樣，把每天的重點、節奏與期待感整理好。</p>
+      </div>
+      <div class="day-list" id="day-list"></div>
+    </section>
+
+    <section class="section map-lab" id="spots">
+      <div class="section-head reveal">
+        <span class="section-kicker">GOOGLE MAP</span>
+        <h2>景點圖片與地圖</h2>
+        <p>每個景點都有圖片、Google Map 嵌入地圖，以及「開啟外部 Google Map」按鈕。</p>
+      </div>
+      <div class="filters reveal" id="spot-filters"></div>
+      <div class="spot-grid" id="spot-grid"></div>
+    </section>
+
+    <section class="section" id="routes">
+      <div class="section-head reveal">
+        <span class="section-kicker">A → B NAVIGATION</span>
+        <h2>A 地到 B 地交通選擇</h2>
+        <p>每一段路線都可以選擇開車、步行或大眾交通，點擊後會開啟外部 Google Map 導航。</p>
+      </div>
+      <div class="route-board" id="route-board"></div>
+    </section>
+
+    <section class="section" id="restaurants">
+      <div class="section-head reveal">
+        <span class="section-kicker">FOOD NEARBY</span>
+        <h2>景點附近餐廳推薦</h2>
+        <p>依照當天動線安排，優先推薦順路、好查地圖、適合親子或旅途中快速補給的選項。</p>
+      </div>
+      <div class="restaurant-grid" id="restaurant-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top">回到最上方 ↑</a>
+    <p>Made for a warm Okinawa family trip. 點擊導航會開啟外部 Google Map。</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
